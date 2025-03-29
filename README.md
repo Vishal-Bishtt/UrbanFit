@@ -1,10 +1,10 @@
 # UrbanFit - E-commerce Website
 
-## Description
+## Description :
 
 <p>UrbanFit is an e-commerce website designed to sell high-quality hoodies. The website provides a seamless shopping experience with a responsive design, a smooth navigation bar, and a functional shopping cart.</p>
 
-## Features
+## Features :
 
 <ul>
   <li>Full-screen background video for a dynamic UI</li>
@@ -14,7 +14,7 @@
   <li>Stylish product display with images and descriptions</li>
 </ul>
 
-## Technologies Used
+## Technologies Used :
 
 <ul>
   <li><strong>HTML5</strong></li>
