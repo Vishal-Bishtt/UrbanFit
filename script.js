@@ -256,3 +256,11 @@ document.addEventListener("visibilitychange", function() {
         });
     }
 });
+// Fallback: Play on user interaction if autoplay fails
+document.body.addEventListener("click", () => {
+    if (video.paused) {
+        video.play().catch((error) => {
+            console.log("Video play failed on click:", error);
+        });
+    }
+}, { once: true });

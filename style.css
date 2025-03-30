@@ -41,6 +41,14 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/* Add media query for mobile */
+@media (max-width: 768px) {
+    .background-video {
+        width: 100vw; 
+        height: 100vh; 
+        object-fit: cover; 
+    }
+}
 
 .content {
     position: absolute;
