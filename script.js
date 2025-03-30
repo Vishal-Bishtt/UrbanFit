@@ -207,3 +207,37 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         }
     });
 });
+
+// Mobile menu functionality
+const menuIcon = document.querySelector('.menu-icon');
+const mobileSidebar = document.querySelector('.mobile-sidebar');
+const mobileOverlay = document.querySelector('.mobile-overlay');
+const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+function toggleMobileMenu() {
+    mobileSidebar.classList.toggle('active');
+    mobileOverlay.classList.toggle('active');
+}
+
+menuIcon.addEventListener('click', toggleMobileMenu);
+mobileOverlay.addEventListener('click', toggleMobileMenu);
+
+mobileNavLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').slice(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+            const navHeight = document.querySelector('.top-nav').offsetHeight;
+            const targetPosition = targetElement.offsetTop - navHeight;
+            
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+            
+            toggleMobileMenu(); // Close the sidebar after clicking
+        }
+    });
+});

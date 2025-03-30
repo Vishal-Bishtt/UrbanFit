@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/image/UrbanFit.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="assets/fonts/Poppins-Regular.ttf">
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+        }
+    </style>
 </head>
 <body>
     <nav class="top-nav">
@@ -15,6 +22,9 @@
             <div class="search-container">
                 <i class="fal fa-search search-icon"></i>
                 <input type="text" class="search-bar" placeholder="Search...">
+            </div>
+            <div class="mobile-menu">
+                <i class="fal fa-bars menu-icon"></i>
             </div>
             <div class="nav-links">
                 <a href="#home">Home</a>
@@ -28,6 +38,15 @@
             </div>
         </div>
     </nav>
+    <div class="mobile-sidebar">
+        <div class="mobile-nav">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="mobile-overlay"></div>
     <div class="cart-sidebar">
         <div class="cart-header">
             <h2>Shopping Cart</h2>
