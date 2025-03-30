@@ -746,4 +746,11 @@ body {
         padding: 1rem;
         height: 70px;
     }
+    .search-bar.active {
+        width: 150px;  /* Reduced from 200px */
+    }
+
+    .search-container {
+        margin-left: 10px;  /* Reduced margin */
+    }
 }
