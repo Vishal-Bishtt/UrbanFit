@@ -770,4 +770,8 @@ body {
     .search-container {
         margin-left: 10px;  /* Reduced margin */
     }
+    .cart-count {
+        top: -8px;
+        right: -8px;  /* Adjusted position for mobile */
+    }
 }
