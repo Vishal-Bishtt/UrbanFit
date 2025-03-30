@@ -585,7 +585,7 @@ body {
     color: white;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     font-family: 'Poppins', sans-serif;
 }
 
