@@ -50,6 +50,13 @@ products.forEach((product, index) => {
         qtyDisplay.textContent = qty;
         cartCountDisplay.textContent = cartCount;
         
+        // Show/hide cart count based on total items
+        if (cartCount > 0) {
+            cartCountDisplay.classList.add('visible');
+        } else {
+            cartCountDisplay.classList.remove('visible');
+        }
+        
         const productName = `Product ${index + 1}`; // Unique name for each product
         const productImg = product.querySelector('img').src;
         const price = 200;

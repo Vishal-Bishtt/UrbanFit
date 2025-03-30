@@ -40,6 +40,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
 }
 /* Add media query for mobile */
 @media (max-width: 768px) {
@@ -356,16 +357,23 @@ body {
 
 .cart-count {
     position: absolute;
-    top: -8px;
-    right: -8px;
-    background: #ffffff;
-    color: #000000;
+    top: -12px;
+    right: 6px;
+    background: #960606;
+    color: #ffffff;
     font-size: 12px;
-    padding: 2px 6px;
+    padding: 1px 3px;
     border-radius: 50%;
     min-width: 16px;
     text-align: center;
     transition: transform 0.2s ease;
+    opacity: 0;  /* Hide by default */
+    visibility: hidden;  /* Hide from layout */
+}
+
+.cart-count.visible {
+    opacity: 1;
+    visibility: visible;
 }
 
 .search-container {
@@ -754,6 +762,7 @@ body {
         padding: 1rem;
         height: 70px;
     }
+
     .search-bar.active {
         width: 140px;  /* Reduced from 200px */
     }
