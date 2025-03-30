@@ -241,3 +241,18 @@ mobileNavLinks.forEach(link => {
         }
     });
 });
+
+// Ensure video plays on mobile
+const video = document.querySelector('.background-video');
+video.play().catch(function(error) {
+    console.log("Video play failed", error);
+});
+
+// Handle visibility changes
+document.addEventListener("visibilitychange", function() {
+    if (document.visibilityState === 'visible') {
+        video.play().catch(function(error) {
+            console.log("Video play failed on visibility change", error);
+        });
+    }
+});

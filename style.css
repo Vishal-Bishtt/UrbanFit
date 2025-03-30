@@ -747,7 +747,7 @@ body {
         height: 70px;
     }
     .search-bar.active {
-        width: 150px;  /* Reduced from 200px */
+        width: 140px;  /* Reduced from 200px */
     }
 
     .search-container {
